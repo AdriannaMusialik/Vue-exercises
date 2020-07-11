@@ -1,18 +1,16 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <List />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import List from './components/List.vue'
+import List from './components/List'
 
 export default {
   name: 'App',
-  components: {
-    List
-  }
+  comments: {List}
 }
 </script>
 
