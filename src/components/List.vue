@@ -35,8 +35,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+li {
+  font-size: 20px;
+  list-style: none;
+  display:inline-flex;
+  margin: 0 15px;
+
+
 }
 
 </style>
