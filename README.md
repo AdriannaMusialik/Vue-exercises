@@ -7,9 +7,6 @@ a) Wygeneruj listę <li> z numerami 1-10.
 b) Wygeneruj nagłówki odpowiadające elelementom z listy
 c) za pomocą vue-lorem-ipsum https://www.npmjs.com/package/vue-lorem-ipsum dorzuć pod każdy nagłówek akapit losowego tekstu
 d) podepnij każdy element listy anchor linkiem do odpowiadającego mu nagłówka
-npm
-vue-lorem-ipsum
-Lorem ipsum text generatog based on lorem.js for vue.js
 
 2. Wracamy do listy, teraz zmień swoją aplikację tak, żeby lista była na stronie głównej, a kliknięcie w jej element przenosiło użytkownika do podstrony z odpowiednim nagłówkiem i losowym akapitem. Dodaj link wstecz
 
