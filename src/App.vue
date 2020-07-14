@@ -10,8 +10,20 @@ import List from "./components/List"
 
 export default {
   name: 'App',
-  components: {List}
+  components: {List},
+  beforeUpdate() {
+    localStorage.setItem('ArticleNumber', this.$route.params.id)
+  },
+  beforeCreate() {
+    const site = localStorage.getItem('ArticleNumber');
+    this.$router.push(site)
+  },
 }
+
+//here I get error: "Avoided redundant navigation to current location:"
+//Somehow my browser remember last visited page without using localStorage
+//But to be honest I am not sure if I did this exercise correct
+
 </script>
 
 <style>
