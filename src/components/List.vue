@@ -1,11 +1,11 @@
 <template>
   <div id="main">
     <div class="list">
-      <ol>
-        <li v-for="number in numbers" :key="number">
-           <router-link :to="`article/${number}`">Go to {{ number }}</router-link>
-        </li>
-      </ol>
+      <v-tabs>
+        <v-tab v-for="number in numbers" :key="number">
+           <router-link exact :to="`${number}`">Go to {{ number }}</router-link>
+        </v-tab>
+      </v-tabs>
     </div>
   </div>
 </template>
@@ -22,14 +22,8 @@ export default {
 </script>
 
 <style scoped>
-li {
-  font-size: 20px;
-  list-style: none;
-  display:inline-flex;
-  margin: 0 15px;
-}
 
-li a {
+a {
   color: black;
   text-decoration: none;
 }

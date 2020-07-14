@@ -1,5 +1,5 @@
 <template>
-    <div class="articles">
+    <div class="article">
         <article >
             <h2 >{{ $route.params.id }}</h2>
             <p class="text">
@@ -14,7 +14,7 @@
 
 <script>
 import LoremIpsum from 'vue-lorem-ipsum';
-    
+
 export default {
     name: 'Article',
     components: {LoremIpsum},  
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style>
+.article {
+    margin: 20px
+}
 .homeButton {
   margin: 20px;
   font-size: 20px;
