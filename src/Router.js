@@ -1,9 +1,9 @@
 
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 import Article from './components/Article';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {

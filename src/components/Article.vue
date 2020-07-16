@@ -1,7 +1,7 @@
 <template>
     <div class="article">
         <article >
-            <h2 >{{ $route.params.id }}</h2>
+            <h2 >{{ this.$route.params.id }}</h2>
             <p class="text">
                 <LoremIpsum add="2p" />
             </p>
@@ -24,14 +24,25 @@ export default {
     name: 'Article',
     components: {LoremIpsum},  
     methods: {
-        goBack (site) {
+        goBack (site) { 
            this.$router.go(site);
         },
         goTo (site) {
-            this.$router.push(site)
-        }
+            this.$router.push(site);
+        },
+    },
+    beforeUpdate () {
+        this.$store.commit('addArticleNumber', this.$route.params.id);
+    }, 
+    created () {
+        this.$store.commit('addArticleNumber', this.$route.params.id);
+    },
+    destroyed () {
+        this.$store.commit('addArticleNumber', "Home");
     }
-}
+};
+
+//I have no idea how to get rid of last "=>"
 
 </script>
 
