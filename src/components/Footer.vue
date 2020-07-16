@@ -5,8 +5,6 @@
 </template>
 
 <script>
-
-
 export default {
     name: 'Footer',
     data()  {
@@ -15,7 +13,6 @@ export default {
         }
     }
 }
-
 </script>
 
 <style scoped>
